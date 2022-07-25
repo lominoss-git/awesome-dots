@@ -1,4 +1,4 @@
 # awesome-dots
 My custom AwesomeWM desktop.
 
-![VirtualBox_Framework_21_07_2022_18_02_38](https://user-images.githubusercontent.com/79030093/180260811-140bcc93-cf15-47ec-be7a-8701faad6fc8.png)
+![Merged_document(10)](https://user-images.githubusercontent.com/79030093/180863194-0b4a2699-e892-4198-af03-1fe0c030cc40.png)
