@@ -1,0 +1,38 @@
+# pinker theme for SLIM
+# by aditya shakya <adi1090x@gmail.com>
+# using artwork from some free html+css login templates on the internet
+
+# Messages (ie: shutdown)
+
+msg_color               #eceff4
+msg_font                FiraCode Nerd Font:size=18:regular:dpi=75
+msg_x                   50%
+msg_y                   80%
+
+# valid values: stretch, tile
+
+background_style        stretch
+background_color        #f2f2f2
+
+# Input controls
+
+input_panel_x           50%
+input_panel_y           50%
+input_name_x            207
+input_name_y            104
+input_pass_x            207
+input_pass_y            139
+input_font              FiraCode Nerd Font:size=20:regular:dpi=75
+input_color           #88c0d0
+
+# Session Name
+
+session_color               #5e6779
+session_font                FiraCode Nerd Font:size=18:regular:dpi=75
+# session_x                   843
+# session_y                   625
+session_x                   37
+session_y                   50
+
+username_msg
+password_msg
