@@ -1,0 +1,159 @@
+configuration {
+  location: 5;
+  display-drun: "Applications";
+  display-run: "Run";
+  display-window: "Windows";
+  display-filebrowser: "Files";
+  display-search: "Search";
+  // drun-display-format: "{name} [<span size='small'><i>({generic})</i></span>]";
+  drun-display-format: "{name}";
+  window-format: "{w} - {c} {t}";
+  // font: "JetBrainsMono Nerd Font Mono 12";
+  font: "FiraCode Nerd Font 12.7";
+  modi: "window,run,drun,filebrowser";
+  // fixed-num-lines: false;
+  terminal: "xfce4-terminal";
+  show-icons: false;
+}
+
+@theme "/dev/null"
+
+* {
+  bg: #2e3440;
+  bg-alt: #2e3440;
+
+  fg: #eceff4;
+  fg-alt: #5e6779;
+
+  border-color: #eceff4;
+
+  text-color: @fg;
+  background-color: @bg;
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  highlight: none;
+  horizontal-align: 0;
+}
+
+window {
+  // anchor: center;
+  // location: center;
+  width: 100%;
+  height: 46;
+  border: 0 0 0 0;
+  padding: 0;
+}
+
+element {
+  text-color: @fg-alt;
+  padding: 11 15 20 15;
+  expand: false;
+  cursor: pointer;
+}
+
+element.selected {
+  text-color: @bg;
+  background-color: @fg;
+}
+
+element-text {
+  background-color: inherit;
+  text-color: inherit;
+  cursor: pointer;
+  highlight: none #eceff4;
+}
+
+element-text selected {
+  background-color: inherit;
+  text-color: inherit;
+  cursor: pointer;
+  highlight: none;
+}
+
+prompt {
+  text-color: @fg;
+  enabled: true;
+  padding: 11 0 11 0;
+}
+
+textbox-prompt-divider {
+	expand: false;
+	str: ": ";
+	text-color: @fg;
+  padding: 11 0 11 0;
+}
+
+entry {
+  background-color: @bg-alt;
+  padding: 11 0 11 0;
+  text-color: @fg;
+  // placeholder: "Search";
+  placeholder-color: @fg-alt;
+  horizontal-align: 0;
+  expand: false;
+  width: 17.5%;
+  cursor: text;
+}
+
+num-filtered-rows {
+  text-color: @fg;
+  padding: 11 0 11 0;
+}
+
+num-rows {
+  text-color: @fg;
+  padding: 11 0 11 0;
+}
+
+textbox-num-divider {
+	expand: false;
+	str: ":";
+	text-color: @fg;
+  padding: 11 0 11 0;
+}
+
+button-left {
+	expand: false;
+	str: "<";
+	text-color: @fg;
+  padding: 11 15 11 15;
+	action: "kb-page-prev";
+	cursor: pointer;
+}
+
+button-right {
+	expand: false;
+	str: ">";
+	text-color: @fg;
+  padding: 11 15 11 15;
+	action: "kb-page-next";
+	cursor: pointer;
+}
+
+inputbar {
+  children: [prompt, textbox-prompt-divider, entry, button-left, listview, button-right, num-filtered-rows, textbox-num-divider, num-rows];
+  spacing: 0;
+}
+
+listview {
+  background-color: @bg;
+  lines: 100;
+  layout: horizontal;
+  horizontal-align: 0.5;
+}
+
+mainbox {
+  background-color: @bg;
+  children: [inputbar];
+  margin: 0 20 0 20;
+}
+
+message {
+	text-color: @fg;
+}
+
+// vim: ft=sass
