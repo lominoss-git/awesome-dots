@@ -1,0 +1,15 @@
+{
+    "autosu": true,
+    "colorscheme": "nord",
+    "divchars": "│─",
+    "hlsearch": true,
+    "indentchar": "\u003e",
+    "rmtrailingws": true,
+    "savecursor": true,
+    "saveundo": true,
+    "smartpaste": false,
+    "softwrap": true,
+    "statusformatl": " $(filename) $(modified)\u003e ft:$(opt:filetype) \u003e",
+    "statusformatr": "\u003c $(opt:encoding) \u003c $(opt:fileformat) \u003c $(percentage)% ",
+    "wordwrap": true
+}

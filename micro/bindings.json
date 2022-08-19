@@ -1,0 +1,8 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "CtrlUnderscore": "lua:comment.comment",
+    "Alt-s": "Save,Quit",
+    "Alt-h": "HSplit",
+    "Alt-v": "VSplit",
+    "CtrlBackspace": "DeleteWordLeft",
+}
