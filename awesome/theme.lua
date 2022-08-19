@@ -96,8 +96,8 @@ theme.titlebar_ontop_button_focus_active  = "~/.config/awesome/titlebar/ontop_ac
 
 theme.titlebar_floating_button_normal_inactive = "~/.config/awesome/titlebar/floating_normal_inactive.png"
 theme.titlebar_floating_button_focus_inactive  = "~/.config/awesome/titlebar/floating_focus_inactive.png"
-theme.titlebar_floating_button_normal_active = "~/.config/awesome/titlebar/floating.png"
-theme.titlebar_floating_button_focus_active  = "~/.config/awesome/titlebar/floating.png"
+theme.titlebar_floating_button_normal_active = "~/.config/awesome/titlebar/floating_active.png"
+theme.titlebar_floating_button_focus_active  = "~/.config/awesome/titlebar/floating_active.png"
 
 theme.titlebar_maximized_button_normal_inactive = "~/.config/awesome/titlebar/maximized.png"
 theme.titlebar_maximized_button_focus_inactive  = "~/.config/awesome/titlebar/maximized.png"
