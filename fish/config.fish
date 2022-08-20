@@ -3,7 +3,7 @@ set PATH ~/.local/bin $PATH
 set VIRTUALFISH_HOME ~/projects
 
 # Abbreviations
-abbr ls "exa -1la --group-directories-first"
+abbr ls "exa -1 -la --group-directories-first"
 
 # Prompt
 function fish_prompt
