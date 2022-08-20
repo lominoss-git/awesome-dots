@@ -2,10 +2,13 @@ set fish_greeting ""
 set PATH ~/.local/bin $PATH
 set VIRTUALFISH_HOME ~/projects
 
+# Abbreviations
+abbr ls "exa -1la --group-directories-first"
+
 # Prompt
 function fish_prompt
     set -l last_status $status
-    set -l cwd (prompt_pwd)
+    set -l cwd (string replace $HOME "~" $(pwd))
 
     # Working directory
     echo -n -s (set_color --bold magenta) $cwd
