@@ -1,4 +1,4 @@
 # awesome-dots
 My custom AwesomeWM desktop.
 
-![m_merged(10)](https://user-images.githubusercontent.com/79030093/185996735-d9eaa8d2-1806-4c55-9942-83fb47b2b533.png)
+![m_merged(11)](https://user-images.githubusercontent.com/79030093/186272754-21f46587-c43c-4933-a180-d6c391a53347.png)
