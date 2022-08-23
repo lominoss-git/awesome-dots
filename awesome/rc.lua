@@ -236,7 +236,7 @@ end)
 
 -- {{{ Mouse bindings
 root.buttons(gears.table.join(
-    awful.button({ }, 3, function () awful.spawn.with_shell("sh ~/.config/rofi/scripts/rofi-right-click-menu.sh") end),
+    -- awful.button({ }, 3, function () end),
 
     -- Switch tags on desktop scroll
     awful.button({ }, 4, awful.tag.viewnext),
