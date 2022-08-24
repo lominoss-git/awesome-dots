@@ -259,13 +259,10 @@ globalkeys = gears.table.join(
     -- Hide/show titlebars
     awful.key({ superkey, "Shift" }, "b",
           function ()
-              for _, c in ipairs(client.get()) do
-                  if c.class ~= "Polybar" then
-                      awful.titlebar.toggle(c, "top")
-                  end
+              local c = client.focus
+              if c then
+                  awful.titlebar.toggle(c, "top")
               end
-              -- show_titlebars = not show_titlebars
-              -- naughty.notify({ title = "Yo", text = tostring(show_titlebars) })
           end,
           {description="toggle titlebar visibility", group="awesome"}
           ),
