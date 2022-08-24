@@ -4,6 +4,8 @@ set VIRTUALFISH_HOME ~/projects
 
 # Abbreviations
 abbr ls "exa -1 -la --group-directories-first"
+abbr p "sudo pacman"
+abbr P "paru"
 
 # Prompt
 function fish_prompt
