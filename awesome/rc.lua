@@ -621,7 +621,7 @@ client.connect_signal("request::titlebars", function(c)
         end)
     )
 
-    awful.titlebar(c, {size = 23}) : setup {
+    awful.titlebar(c, {size = 24}) : setup {
         { -- Left
             -- awful.titlebar.widget.iconwidget(c),
             awful.titlebar.widget.floatingbutton (c),
