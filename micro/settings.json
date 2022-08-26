@@ -10,6 +10,6 @@
     "smartpaste": false,
     "softwrap": true,
     "statusformatl": " $(filename) $(modified)\u003e ft:$(opt:filetype) \u003e",
-    "statusformatr": "\u003c $(opt:encoding) \u003c $(opt:fileformat) \u003c $(percentage)/100 ",
+    "statusformatr": "\u003c $(opt:encoding) \u003c $(opt:fileformat) \u003c $(percentage):100 ",
     "wordwrap": true
 }
