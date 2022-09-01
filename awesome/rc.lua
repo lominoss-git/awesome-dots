@@ -51,8 +51,8 @@ beautiful.init("~/.config/awesome/theme.lua")
 terminal         = "xfce4-terminal"
 browser          = "firefox"
 wallpaper_setter = "nitrogen"
-file_browser     = terminal .. " -e ranger"
-editor_cmd       = terminal .. " -e micro"
+file_browser     = terminal .. " -e " .. "ranger"
+editor_cmd       = terminal .. " -e " .. "micro"
 
 show_titlebars   = true
 border_radius    = 0
@@ -242,7 +242,9 @@ root.buttons(gears.table.join(
 
     -- Switch tags on desktop scroll
     awful.button({ }, 4, awful.tag.viewnext),
-    awful.button({ }, 5, awful.tag.viewprev)
+    awful.button({ }, 5, awful.tag.viewprev),
+    awful.button({ }, 6, function() awful.client.focus.byidx( 1) end),
+    awful.button({ }, 7, function() awful.client.focus.byidx( -1) end)
 ))
 -- }}}
 
@@ -525,7 +527,7 @@ clientbuttons = gears.table.join(
 
     -- Kill window with mouse
     awful.button({ superkey, "Shift" }, 2, function (c)
-        -- c:emit_signal("request::activate", "mouse_click", {raise = true})
+        c:emit_signal("request::activate", "mouse_click", {raise = true})
         c:kill()
     end)
 )
@@ -660,8 +662,14 @@ awful.titlebar.enable_tooltip = false
 -- end)
 
 client.connect_signal("manage", function(c)
-    c.shape = function(cr, w, h)
-        gears.shape.partially_rounded_rect(cr, w, h, true, true, false, false, border_radius)
+    if ( c.class ~= "Polybar" and c.requests_no_titlebar == true ) then
+        c.shape = function(cr, w, h)
+            if c.fullscreen == false then
+                gears.shape.partially_rounded_rect(cr, w, h, true, true, false, false, border_radius)
+            else
+                gears.shape.rounded_rect(cr, w, h, 0)
+            end
+        end
     end
 end )
 
