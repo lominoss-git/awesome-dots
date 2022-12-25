@@ -106,7 +106,7 @@ class MyWindow(QMainWindow):
         self.session_label = QtWidgets.QLabel(self)
         self.session_label.setText("Session:")
         self.session_label.adjustSize()
-        self.session_label.move(screen_side_margin, self.height() - self.session_label.height() - screen_bottom_margin)
+        self.session_label.move(self.input_window.x(), self.input_window.y() - 40)
 
         self.session_button = QtWidgets.QPushButton(self)
         self.session_button.setText(self.current_session)
@@ -120,7 +120,7 @@ class MyWindow(QMainWindow):
         self.status_label.setText("Incorrect Password")
         self.status_label.adjustSize()
         self.status_label.move(self.width() // 2 - self.status_label.width() // 2, self.input_window.y() + self.input_window.height() + 40)
-        self.status_label.hide()
+        # self.status_label.hide()
 
     def calculateSize(self, text):
         self.size_label.setText(text)
@@ -149,7 +149,7 @@ class MyWindow(QMainWindow):
 
         self.time_label.setText(label_time)
         self.time_label.adjustSize()
-        self.time_label.move(self.width() - self.time_label.width() - screen_side_margin, self.height() - self.time_label.height() - screen_bottom_margin)
+        self.time_label.move(self.input_window.x() + self.input_window.width() - self.time_label.width(), self.input_window.y() - 40)
 
     def changeSession(self):
         self.current_session = next(self.session_cycle)
